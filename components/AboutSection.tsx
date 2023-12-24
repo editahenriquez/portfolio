@@ -1,28 +1,27 @@
-import Image from 'next/image'
 import React from 'react'
 
 const skills = [
-    {skill: 'Visual Studio Code'},
-    {skill: 'Git'},
-    {skill: 'GitHub'},
-    {skill: 'HTML'},
-    {skill: 'CSS'},
-    {skill: 'JavaScript'},
-    {skill: 'TypeScript'},
-    {skill: 'SOLID principles and Clean Code'},
-    {skill: 'React'},
-    {skill: 'Next.js'},
-    {skill: 'Tailwind CSS'},
-    {skill: 'Material-UI'},
     {skill: 'Node.JS'},
     {skill: 'Express.JS'},
-    {skill: 'Docker'},
     {skill: 'SQL Server'},
     {skill: 'PostgreSQL'},
     {skill: 'MySQL'},
     {skill: 'SQL Anywhere'},
+    {skill: 'Visual Studio Code'},
+    {skill: 'HTML'},
+    {skill: 'CSS'},
+    {skill: 'JavaScript'},
+    {skill: 'TypeScript'},
+    {skill: 'React'},
+    {skill: 'Next.js'},
+    {skill: 'Tailwind CSS'},
+    {skill: 'Material-UI'},
+    {skill: 'Git'},
+    {skill: 'GitHub'},
+    {skill: 'SOLID principles and Clean Code'},
+    {skill: 'Docker'},
     {skill: 'Power Design'},
-    {skill: 'Power Builder'},
+    {skill: 'Power Builder'}
 ]
 
 const AboutSection = () => {
