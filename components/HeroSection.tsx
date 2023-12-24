@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { Link } from "react-scroll/modules";
 import {HiArrowDown} from 'react-icons/hi';
-
 import React from 'react'
 
 const HeroSection = () => {
@@ -34,10 +33,18 @@ const HeroSection = () => {
             smooth={true}
             offset={-100}
             duration={500}
-            className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
+            className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700 mr-4 cursor-pointer"
           >
             Projects
           </Link>
+          <a
+          href="https://drive.google.com/file/d/12HJ77VP9erI5YANXIPsehrnEDhmkFrYK/view?usp=drive_link"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-neutral-200 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
+          >
+          Resume
+          </a>        
         </div>
       </div>
       <div className="flex flex-row items-center text-center justify-center">
