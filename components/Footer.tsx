@@ -13,6 +13,9 @@ const Footer = () => {
         <Link href='https://github.com/editahenriquez'target='_blank'>
           <AiOutlineGithub className='hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100' size={30} />
         </Link>
+        <Link href='https://www.linkedin.com/in/edita-henriquez/'target='_blank'>
+          <AiOutlineLinkedin className='hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100' size={30} />
+        </Link>
         </div>
     </div>
    </footer>
