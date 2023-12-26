@@ -12,7 +12,7 @@ const skills = [
     {skill: 'CSS'},
     {skill: 'JavaScript'},
     {skill: 'TypeScript'},
-    {skill: 'React'},
+    {skill: 'React.js'},
     {skill: 'Next.js'},
     {skill: 'Tailwind CSS'},
     {skill: 'Material-UI'},
