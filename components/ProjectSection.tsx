@@ -5,18 +5,31 @@ import {BsGithub, BsArrowUpRightSquare} from 'react-icons/bs';
 
 const projects = [
       {
-        name: 'Fruit Blog',
-        description: `It's an HTML & CSS website where you can explore information about various fruits`,
-        image: '/fruitblog-html-css.png',
-        github: 'https://github.com/editahenriquez/fruitblog',
-        link: 'https://editahenriquez.github.io/fruitblog/'
+        name: 'Full Stack E-Commerce + Dashboard & CMS',
+        description: `It's built using Next.js, React, Prisma, MySQL, Shadcn and Tailwind CSS`,
+        image: '/ecommerce.png',
+        github1: 'https://github.com/editahenriquez/ecommerce-store',
+        github2: 'https://github.com/editahenriquez/ecommerce-admin',
+        link1: 'https://ecommerce-store-projectm.vercel.app/',
+        link2: 'https://ecommerce-admin-projectm.vercel.app/',
       },
       {
         name: 'PERN CRUD Tasks',
         description: `It's built using PERN Stack (Postgres, Express, React y Node), Docker, Material UI and Tailwind CSS where you can create, read, update, and delete tasks`,
         image: '/TasksApp-pern.png',
-        github: 'https://github.com/editahenriquez/pern-frontend',
-        link: 'https://pern-frontend-chi.vercel.app/'
+        github1: 'https://github.com/editahenriquez/pern-frontend',
+        github2: '',
+        link1: 'https://pern-frontend-chi.vercel.app/',
+        link2: ''
+      },
+      {
+        name: 'Fruit Blog',
+        description: `It's an HTML & CSS website where you can explore information about various fruits`,
+        image: '/fruitblog-html-css.png',
+        github1: 'https://github.com/editahenriquez/fruitblog',
+        github2: '',
+        link1: 'https://editahenriquez.github.io/fruitblog/',
+        link2: ''
       }
 ]
 
@@ -34,7 +47,7 @@ const ProjectSection = () => {
                   <div key={idx}>
                     <div className='flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-10'>
                         <div className='md:w-1/2'>
-                            <Link href={project.link} target='_blank'>
+                            <Link href={project.link1} target='_blank'>
                                 <Image
                                     src={project.image}
                                     alt=''
@@ -50,17 +63,32 @@ const ProjectSection = () => {
                               {project.description}
                             </p>
                             <div className='flex flex-row align-bottom space-x-4'>
-                              <Link href={project.github} target='_blank' className='hover:-translate-y-1 transition-transform cursor-pointer'>
+                              <Link href={project.github1} target='_blank' className='hover:-translate-y-1 transition-transform cursor-pointer'>
                                 <BsGithub
                                   size={30}
                                 />
                               </Link>
-                              <Link href={project.link} target='_blank'>
+                              {project.github2 !== '' && (
+                                <Link href={project.github2} target='_blank' className='hover:-translate-y-1 transition-transform cursor-pointer'>
+                                <BsGithub
+                                  size={30}
+                                />
+                               </Link>
+                              )}
+                              <Link href={project.link1} target='_blank'>
                                 <BsArrowUpRightSquare
                                   size={30}
                                   className='hover:-translate-y-1 transition-transform cursor-pointer'
                                 />
                               </Link>
+                              {project.link2 !== '' && (
+                                <Link href={project.link2} target='_blank'>
+                                  <BsArrowUpRightSquare
+                                    size={30}
+                                    className='hover:-translate-y-1 transition-transform cursor-pointer'
+                                  />
+                                </Link>
+                              )}
                             </div>
                         </div>
                     </div>

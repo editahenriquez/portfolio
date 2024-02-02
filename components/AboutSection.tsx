@@ -7,6 +7,7 @@ const skills = [
     {skill: 'PostgreSQL'},
     {skill: 'MySQL'},
     {skill: 'SQL Anywhere'},
+    {skill: 'Prisma'},
     {skill: 'Visual Studio Code'},
     {skill: 'HTML'},
     {skill: 'CSS'},
@@ -38,21 +39,18 @@ const AboutSection = () => {
                     Get to know me!
                   </h1>
                   <p>
-                    Hello! I&#39;m a passionate and creative person with a deep desire to build 
-                    meaningful projects and solutions that make people&#39;s lives better.
-                    The joy of creating impactful solutions that{' '}
-                    <span className="font-bold text-teal-500">positively affect lives is what drives me.</span>                    
+                    Hello! I&#39;m a passionate and creative person driven by making a positive impact
+                    through building solutions that{' '}<span className="font-bold text-teal-500">improve lives.</span>{' '}
                   </p>
                   <br />
                   <p>
                   I believe in the {' '}<span className="font-bold text-teal-500">beauty of balance.</span>{' '}
-                  When I&#39;m not immersed in coding or expanding my horizons 
-                  by embracing new technologies, You&#39;ll find me on walks, or exploring new things 
-                  through books and audiobooks, or listening to music from around the globe or 
-                  cooking and sharing a meal with friends.
+                  When I&#39;m not coding or exploring new technologies,
+                  You&#39;ll find me on walks, diving into books and audiobooks,
+                  enjoying global music, or cooking and sharing a meal with loved ones.
                   </p>
                   <br />
-                  <p>Let&#39;s build, innovate, and enjoy the beautiful symphony of life😊.</p>
+                  <p>Let&#39;s connect and make your vision a reality, together!</p>
                 </div>
                 <div className='text-center md:w-1/2 md:text-left'>
                   <h1 className='text-2xl font-bold mb-6'>My Skills</h1>
