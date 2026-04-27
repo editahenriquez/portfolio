@@ -19,32 +19,38 @@ const HeroSection = () => {
           />
         </div>
         <div className="md:mt-2 md:w-3/5">
-          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl">Hi, I&#39;m Edita! </h1>
-          <p className="text-lg mt-4 mb-6 md:text-2xl">
-            <span className="font-semibold text-teal-600">
-              Software Developer {' '}
-            </span>
-            working on a mission to build meaningful software that enhances people&#39;s lives.
-          </p>
+          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl">Hi, I&#39;m Edita!</h1>
+          
+          <div className="text-lg mt-4 mb-6 md:text-xl">
+            <p className="mb-4">
+              With more than a <span className="font-semibold text-teal-600">decade of experience</span> in the tech industry, I help companies grow through:
+            </p>
+            
+            <ul className="list-none space-y-2 mb-6">
+              <li>
+                <span className="font-bold">🚀 Full-Stack Development:</span> Building Web, APIs(Next.js, ASP.NET Core, SQL Server, AWS) and Mobile Apps (Kotlin).
+              </li>
+              <li>
+                <span className="font-bold">🔄 Digital Modernization:</span> Migrating legacy systems (PowerBuilder / .NET WPF / Sybase) to modern architectures (ASP.NET Core, Next.js) while maintaining data integrity.
+              </li>
+            </ul>
+
+            <p className="text-teal-600 font-medium italic">
+              My goal is clear: reduce your operating costs and increase profitability through custom software.
+            </p>
+          </div>
+
           <Link
-            to = 'projects'
+            to="projects"
             activeClass="active"
             spy={true}
             smooth={true}
             offset={-100}
             duration={500}
-            className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700 mr-4 cursor-pointer"
+            className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700 mr-4 cursor-pointer inline-block"
           >
             Projects
           </Link>
-          <a
-          href="https://drive.google.com/file/d/1l0BCM1m_JZbHjveb5NkBfmpliRZBYMYr/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-neutral-200 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
-          >
-          Resume
-          </a>
         </div>
       </div>
       <div className="flex flex-row items-center text-center justify-center">
