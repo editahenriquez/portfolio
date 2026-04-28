@@ -36,7 +36,7 @@ const HeroSection = () => {
             </ul>
 
             <p className="text-teal-600 font-medium italic">
-              My goal is clear: reduce your operating costs and increase profitability through custom software.
+              I help you reduce operating costs and boost profitability with custom software.
             </p>
           </div>
 
