@@ -1,4 +1,4 @@
-"use client" // this is a client component
+"use client" // this is a client components
 import React, { useEffect } from "react"
 import { useState } from "react"
 import { Link } from "react-scroll/modules"
